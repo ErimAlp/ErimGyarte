@@ -52,24 +52,27 @@ nav ul {
 nav ul li a {
   line-height: 80px;
   color: #fff;
+  opacity: 0.8;
   padding: 100% 30px 10px 30px;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
+  -webkit-transition: border ease 0.1s, background-color ease 0.5s;
+  transition: border ease 0.1s, background-color ease 0.5s;
 }
 
 nav li a:hover {
-  color: #fff;
+  opacity: 1;
   border-bottom: 3px solid crimson;
   background-color: #6F2232;
 }
 
-::-moz-selection {
+nav li ::-moz-selection {
   background-color: #950740;
   color: #1a1a1d;
 }
 
-::selection {
+nav li ::selection {
   background-color: #950740;
   color: #1a1a1d;
 }
