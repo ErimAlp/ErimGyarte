@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: montserrat, Arial, Helvetica, sans-serif;
@@ -35,8 +36,8 @@ nav .logo span {
 
 nav .logo span:hover {
   cursor: pointer;
-  color: #C3073F;
-  border-bottom: 3px solid #C3073F;
+  color: #c3073f;
+  border-bottom: 3px solid #c3073f;
 }
 
 nav ul {
@@ -64,7 +65,7 @@ nav ul li a {
 nav li a:hover {
   opacity: 1;
   border-bottom: 3px solid crimson;
-  background-color: #6F2232;
+  background-color: #6f2232;
 }
 
 nav li ::-moz-selection {
@@ -75,5 +76,34 @@ nav li ::-moz-selection {
 nav li ::selection {
   background-color: #950740;
   color: #1a1a1d;
+}
+
+.row {
+  margin: 0 0 0 185px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  display: table-cell;
+}
+
+.row > .column {
+  margin: 0 0 0 -3px;
+}
+
+/* Content */
+.proj-content {
+  margin: 120px 0 0 0px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #252529;
+  border: 3px solid #6f2232;
+  display: table;
+}
+
+.proj-content p {
+  color: #d1d1d1;
 }
 /*# sourceMappingURL=style.css.map */

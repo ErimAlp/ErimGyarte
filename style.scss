@@ -1,79 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body, html{
-    margin: 0;
-    padding: 0;
-    font-family: montserrat, Arial, Helvetica, sans-serif;
-    background-color: #1a1a1d
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat, Arial, Helvetica, sans-serif;
+  background-color: #1a1a1d;
 }
 
-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 10px 170px;
+  box-sizing: border-box;
+  // background: rgba(0, 0, 0, 0.17)
+  // border-bottom: 1px solid #fff;
+
+  .logo {
+    padding: 20px 20px;
     height: 80px;
-    padding: 10px 170px;
-    box-sizing: border-box;
-    // background: rgba(0, 0, 0, 0.17)
-    // border-bottom: 1px solid #fff;
+    float: left;
 
-    .logo{
-        padding: 20px 20px;
-        height: 80px;
-        float: left;
+    span {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      display: inline-block;
+      line-height: 1em;
+      border-bottom: 2px solid #fff;
 
-        span{
-            font-size: 24px;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #fff;
-            display: inline-block;
-            line-height: 1em;
-            border-bottom: 2px solid #fff;
-            
-            &:hover{
-                cursor: pointer;
-                 color: #C3073F;
-                 border-bottom: 3px solid #C3073F;
-        }
+      &:hover {
+        cursor: pointer;
+        color: #c3073f;
+        border-bottom: 3px solid #c3073f;
+      }
     }
-    }
-    ul{
-        list-style: none;
-        float: right;
-        margin: 0;
-        padding: 0;
-        display: flex;
+  }
+  ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  ul li a {
+    line-height: 80px;
+    color: #fff;
+    opacity: 0.8;
+    padding: 100% 30px 10px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: border ease 0.1s, background-color ease 0.5s;
+  }
+
+  li {
+    a:hover {
+      opacity: 1;
+      border-bottom: 3px solid crimson;
+      background-color: #6f2232;
     }
 
-    ul li a{
-        line-height: 80px;
-        color: #fff;
-        opacity: 0.8;
-        padding: 100% 30px 10px 30px;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: bold;
-        transition: border ease 0.1s, background-color ease 0.5s;
-        
+    ::selection {
+      background-color: #950740;
+      color: #1a1a1d;
     }
-    
-    li{
-        a:hover{
-            opacity: 1;
-            border-bottom: 3px solid crimson;
-            background-color: #6F2232;
-        }
-        
-        ::selection{
-            background-color: #950740;
-            color: #1a1a1d; 
-        }
-        // .content{
-            //     padding: 50px 400px;
-            //     margin: 80px 0 0 0;
-            //     background-color: rgba($color: #fff000, $alpha: .13);
-// }
-            
-         }
-        }
+  }
+}
+
+.row {
+  margin: 0 0 0 185px;
+
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  display: table-cell;
+  
+}
+
+.row > .column {
+  margin: 0 0 0 -3px;
+}
+
+/* Content */
+.proj-content {
+  margin: 120px 0 0 0px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #252529;
+  border: 3px solid #6f2232;
+  display: table;
+
+  p{
+      color: #d1d1d1;
+    //   width: 0px;
+  }
+}
