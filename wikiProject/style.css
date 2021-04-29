@@ -1,5 +1,120 @@
-body{
-    margin: 0;
-    padding: 0;
-    color: red;
-}
+body {
+    background-color: whitesmoke;
+  }
+  
+  .mainone {
+    padding-bottom: 20px;
+    padding-left: 2%;
+    background-color: white;
+  }
+  
+  .mainone h1 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-bottom: darkgray 1px solid;
+  }
+  
+  .mainone h2 {
+    font-size: 1.5em;
+    border-bottom: darkgray 1px;
+    border-style: solid;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+  
+  .mainone img {
+    margin-top: 15px;
+  }
+  
+  .wikiImg {
+    width: 250px;
+  }
+  
+  .thumbinner {
+    width: 252px;
+    background-color: whitesmoke;
+    padding: 0px 5px;
+    margin: 0px 10px;
+    font-size: 12px;
+    float: right;
+    border: darkgray 1px solid;
+  }
+  
+  .headnav {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 20px -10px;
+    
+  }
+  
+  .headnav li {
+    display: inline;
+    font-weight: 600;
+    margin: 0px 10px;
+  }
+  
+  .headnav li:hover {
+    cursor: pointer;
+  }
+  
+  .headnav .headnavRight {
+    float: right;
+    vertical-align: text-bottom;
+  }
+  
+  .headnav .headnavRight input {
+    height: 2em;
+    width: 240px;
+  }
+  
+  nav {
+    background-color: whitesmoke;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 10px 0px 15px 0px;
+  }
+  
+  nav p {
+    color: black;
+    border-bottom: darkgray 1px solid;
+  }
+  
+  nav a {
+    display: block;
+    color: blue;
+    margin: 0 0 2px 0px;
+    text-decoration: underline;
+  }
+  
+  nav a:hover {
+    cursor: pointer;
+  }
+  
+  nav img {
+    margin-bottom: 15px;
+  }
+  
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10% 90%;
+        grid-template-columns: 10% 90%;
+    margin: 10px 1px 0px 0px;
+  }
+  
+  main p {
+    margin: 0.5em 0px;
+    display: block;
+    font-size: 1em;
+  }
+  
+  footer {
+    margin-top: 10px;
+    margin-left: 226px;
+    background-color: whitesmoke;
+    padding: 20px;
+  }
+  /*# sourceMappingURL=style.css.map */

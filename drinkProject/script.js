@@ -1,4 +1,4 @@
-import {getwebquote} from './fetchquotes';
+import {getwebquote} from '/ErimGyarte/drinkProject/fetchquotes.js';
 
 addlisteners();
 
